@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EF22CA71EAEACD700496ABB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EF22CA61EAEACD700496ABB /* main.cpp */; };
+		0E433AE41EC94FC4000636EC /* SimpleGLUT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E433AE31EC94FC4000636EC /* SimpleGLUT.cpp */; };
+		0E433AF11EC9505C000636EC /* StdAfx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0E433AEE1EC9505C000636EC /* StdAfx.cpp */; };
+		0E433AF41EC95579000636EC /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E433AF31EC95579000636EC /* OpenGL.framework */; };
+		0E433AF61EC9557F000636EC /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E433AF51EC9557F000636EC /* GLUT.framework */; };
+		0E433AF81EC95978000636EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E433AF71EC95978000636EC /* Foundation.framework */; };
+		0E433AFA1EC95980000636EC /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E433AF91EC95980000636EC /* AppKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +28,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E433AE31EC94FC4000636EC /* SimpleGLUT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleGLUT.cpp; sourceTree = "<group>"; };
+		0E433AE51EC9505C000636EC /* Source */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Source; sourceTree = SOURCE_ROOT; };
+		0E433AE61EC9505C000636EC /* SimpleGLUT.suo */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleGLUT.suo; sourceTree = SOURCE_ROOT; };
+		0E433AE81EC9505C000636EC /* SimpleGLUT.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SimpleGLUT.vcxproj; sourceTree = SOURCE_ROOT; };
+		0E433AE91EC9505C000636EC /* SimpleGLUT.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SimpleGLUT.vcxproj.filters; sourceTree = SOURCE_ROOT; };
+		0E433AEA1EC9505C000636EC /* SimpleGLUT.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleGLUT.sln; sourceTree = SOURCE_ROOT; };
+		0E433AEB1EC9505C000636EC /* glut32.dll */ = {isa = PBXFileReference; lastKnownFileType = file; path = glut32.dll; sourceTree = SOURCE_ROOT; };
+		0E433AEC1EC9505C000636EC /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = SOURCE_ROOT; };
+		0E433AED1EC9505C000636EC /* SimpleGLUT.vcxproj.user */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SimpleGLUT.vcxproj.user; sourceTree = SOURCE_ROOT; };
+		0E433AEE1EC9505C000636EC /* StdAfx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StdAfx.cpp; sourceTree = SOURCE_ROOT; };
+		0E433AEF1EC9505C000636EC /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdAfx.h; sourceTree = SOURCE_ROOT; };
+		0E433AF31EC95579000636EC /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		0E433AF51EC9557F000636EC /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		0E433AF71EC95978000636EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0E433AF91EC95980000636EC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0E433AFD1EC98877000636EC /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = SOURCE_ROOT; };
 		0EF22CA31EAEACD700496ABB /* Lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab3; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EF22CA61EAEACD700496ABB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +52,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E433AFA1EC95980000636EC /* AppKit.framework in Frameworks */,
+				0E433AF81EC95978000636EC /* Foundation.framework in Frameworks */,
+				0E433AF61EC9557F000636EC /* GLUT.framework in Frameworks */,
+				0E433AF41EC95579000636EC /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E433AF21EC95579000636EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E433AF91EC95980000636EC /* AppKit.framework */,
+				0E433AF71EC95978000636EC /* Foundation.framework */,
+				0E433AF51EC9557F000636EC /* GLUT.framework */,
+				0E433AF31EC95579000636EC /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0EF22C9A1EAEACD700496ABB = {
 			isa = PBXGroup;
 			children = (
 				0EF22CA51EAEACD700496ABB /* Lab3 */,
 				0EF22CA41EAEACD700496ABB /* Products */,
+				0E433AF21EC95579000636EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +93,18 @@
 		0EF22CA51EAEACD700496ABB /* Lab3 */ = {
 			isa = PBXGroup;
 			children = (
-				0EF22CA61EAEACD700496ABB /* main.cpp */,
+				0E433AFD1EC98877000636EC /* Data */,
+				0E433AE51EC9505C000636EC /* Source */,
+				0E433AE61EC9505C000636EC /* SimpleGLUT.suo */,
+				0E433AE81EC9505C000636EC /* SimpleGLUT.vcxproj */,
+				0E433AE91EC9505C000636EC /* SimpleGLUT.vcxproj.filters */,
+				0E433AEA1EC9505C000636EC /* SimpleGLUT.sln */,
+				0E433AEB1EC9505C000636EC /* glut32.dll */,
+				0E433AEC1EC9505C000636EC /* ReadMe.txt */,
+				0E433AED1EC9505C000636EC /* SimpleGLUT.vcxproj.user */,
+				0E433AEE1EC9505C000636EC /* StdAfx.cpp */,
+				0E433AEF1EC9505C000636EC /* StdAfx.h */,
+				0E433AE31EC94FC4000636EC /* SimpleGLUT.cpp */,
 			);
 			path = Lab3;
 			sourceTree = "<group>";
@@ -119,7 +166,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EF22CA71EAEACD700496ABB /* main.cpp in Sources */,
+				0E433AF11EC9505C000636EC /* StdAfx.cpp in Sources */,
+				0E433AE41EC94FC4000636EC /* SimpleGLUT.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +266,7 @@
 		0EF22CAB1EAEACD700496ABB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /Users/jingsi/Desktop/Lab3/Source;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -225,6 +274,7 @@
 		0EF22CAC1EAEACD700496ABB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /Users/jingsi/Desktop/Lab3/Source;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -248,6 +298,7 @@
 				0EF22CAC1EAEACD700496ABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
